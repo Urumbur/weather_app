@@ -28,7 +28,7 @@ const App = () => {
 
   useEffect(() => {
     if(value.length === 0) return;
-    const API = `http://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${APIKey}&units=metric`;  
+    const API = `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${APIKey}&units=metric`;  
     fetch(API)
     .then(res => {
       if (res.ok) {
